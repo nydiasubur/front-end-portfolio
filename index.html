@@ -21,105 +21,124 @@
       crossorigin="anonymous"
     ></script>
   </head>
+
   <body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <!-- Navbar-->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary fw-bold">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#">Nydia Subur</a>
+        <a class="navbar-brand" href="#"> NYDIA SUBUR </a>
         <button
           class="navbar-toggler"
           type="button"
           data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarNav"
+        >
+          <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="index.html"
-                >Home</a
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="./about.html"
               >
+                ABOUT ME
+              </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="about.html">About me</a>
+              <a class="nav-link" href="./projects.html"> PROJECTS </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="about.html#contact">Contact me</a>
+              <a class="nav-link" href="./contact.html"> CONTACT </a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
-    <h2 class="header-2">👋 Hi I am</h2>
-    <h1>Nydia Subur</h1>
-    <h3>🇮🇩 Front-end developer, based in Vietnam</h3>
+    <!--End of Navbar-->
+
+    <div class="homepage cointainer-lg p-5">
+      <div class="top-container pl-3">
+        <h1>hello;</h1>
+        <p>
+          I'm Nydia Subur, a front-end developer dedicated to creating elegant,
+          minimal, and impactful websites. Specializing in responsive web
+          applications with JavaScript, HTML, CSS, and React, I bring a sharp
+          eye for detail and a passion for clean design to every project. Let's
+          turn your vision into a stunning, user-friendly web solution.
+        </p>
+      </div>
+    </div>
+
+    <div class="projects-highlight container">
+      <div class="row mb-5 lg-12">
+        <div class="col-12 col-md-4">
+          <img
+            src="/images/weather.png"
+            class="img-fluid p-2 shadow rounded"
+            alt="weather application screenshot"
+          />
+        </div>
+        <div class="col-12 col-md-4">
+          <img
+            src="/images/yoga.png"
+            class="img-fluid p-2 shadow rounded"
+            alt="yoga application screenshot"
+          />
+        </div>
+        <div class="col-12 col-md-4">
+          <img
+            src="/images/yogurt.png"
+            class="img-fluid p-2 shadow rounded"
+            alt="yogurt application screenshot"
+          />
+        </div>
+      </div>
+    </div>
+
     <div class="navigation-links">
       <a href="about.html#contact" class="main-branding-button">Contact me</a>
       <a href="about.html" class="about-link">About me</a>
     </div>
-    <div class="container homepage-content mb-3">
-      <div class="row navigation-links pb-3">
-        <div class="col-md-6">
-          <img
-            src="images/yoga.png"
-            class="img-fluid"
-            alt="yoga application screenshot"
-          />
-        </div>
-        <div class="col-md-6 mt-5">
-          <h2>Yoga app</h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis
-            quia, dignissimos nam ratione veniam quibusdam porro omnis quam vel
-            eos eveniet alias temporibus deserunt veritatis minima fugiat
-            explicabo eum dolore.
-          </p>
-          <a href="#" class="main-branding-button"> Launch Yoga App </a>
-        </div>
-      </div>
+    <hr />
+    <footer class="d-flex flex-column">
+      <div class="container container-fluid px-0">
+        <div class="row align-items-center">
+          <div class="col align-items-center d-flex justify-content-evenly">
+            <a href="mailto:nydiasubur@gmail.com" title="Email Nydia">
+              <i class="fa-regular fa-envelope"></i>
+            </a>
 
-      <div class="row navigation-links mt-4 pb-3">
-        <div class="col-md-6 mt-5">
-          <h2>Weather app</h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis
-            quia, dignissimos nam ratione veniam quibusdam porro omnis quam vel
-            eos eveniet alias temporibus deserunt veritatis minima fugiat
-            explicabo eum dolore.
-          </p>
-          <a href="#" class="main-branding-button"> Launch Weather App </a>
+            <a
+              href="https://www.github.com/vivianncodes"
+              target="_blank"
+              title="GitHub Profile"
+            >
+              <i class="fa-brands fa-github fa-xl" aria-hidden="true"></i>
+            </a>
+            <a
+              href="https://www.linkedin.com/in/viviannguyen58/"
+              target="_blank"
+              title="LinkedIn Profile"
+            >
+              <i className="fab fa-linkedin-in"></i>
+            </a>
+          </div>
         </div>
-        <div class="col-md-6 mt-5">
-          <img
-            src="images/weather.png"
-            class="img-fluid"
-            alt="weather application screenshot"
-          />
-        </div>
-      </div>
 
-      <div class="row navigation-links mt-4 pb-3">
-        <div class="col-md-6">
-          <img
-            src="images/yogurt.png"
-            class="img-fluid"
-            alt="yogurt application screenshot"
-          />
-        </div>
-        <div class="col-md-6 mt-5">
-          <h2>Yoghurt app</h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis
-            quia, dignissimos nam ratione veniam quibusdam porro omnis quam vel
-            eos eveniet alias temporibus deserunt veritatis minima fugiat
-            explicabo eum dolore.
-          </p>
-          <a href="#" class="main-branding-button"> Launch Yoghurt App </a>
+        <div class="row">
+          <div class="col">
+            <h6 class="opacity-50 mt-3">Made by Nydia Subur © 2024</h6>
+          </div>
         </div>
       </div>
-    </div>
+    </footer>
   </body>
 </html>
