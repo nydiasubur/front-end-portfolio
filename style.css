@@ -1,19 +1,17 @@
 :root {
-  --primary-color: #6c63ff;
+  --primary-color: white;
   --secondary-color: #f5f2fe;
   --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
 }
 
 body {
   margin: 60px auto;
-  background-color: black;
+
+  background-image: url("./images/background.jpg");
 
   background-size: cover; /* Cover the entire area */
 }
-body::before {
-  background-image: url("./images/background.jpg");
-  opacity: 0.5;
-}
+
 body .homepage {
   color: whitesmoke;
 }
@@ -54,7 +52,7 @@ p {
   text-align: left;
 }
 .projects-highlight {
-  color: whitesmoke;
+  color: white;
 }
 .projects-highlight p {
   text-align: left;
@@ -102,13 +100,38 @@ p {
 }
 
 .email-link {
-  display: flex;
-  justify-content: center;
   color: var(--primary-color);
-  font-size: 28px;
   text-decoration: none;
 }
 
 .email-link:hover {
   text-decoration: underline;
+}
+.footer-cta {
+  font-size: 50px;
+}
+footer {
+  color: var(--primary-color);
+}
+
+footer .social-links a {
+  color: var(--primary-color);
+  font-size: 20px;
+  padding: 20px;
+  transition: all 150ms ease-in-out;
+}
+
+footer .social-links a:hover {
+  box-shadow: 0 0 20px rgb(231, 230, 230, 0.9);
+  border-radius: 10px;
+}
+
+footer .social-links i {
+  font-size: 25px;
+}
+
+footer .trademark {
+  font-family: "Courier New", Courier, monospace;
+  font-weight: 300;
+  text-align: center;
 }
