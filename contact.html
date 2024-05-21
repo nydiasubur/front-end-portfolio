@@ -61,30 +61,39 @@
       </div>
     </nav>
     <!--End of Navbar-->
-    <div class="container contact">
-      <h1>Contact Me</h1>
-      <div class="mb-3">
-        <label for="exampleFormControlInput1" class="form-label"
-          >Email address</label
-        >
-        <input
-          type="email"
-          class="form-control"
-          id="exampleFormControlInput1"
-          placeholder="name@example.com"
-        />
+ <div class="container contact mt-5 pt-5">
+        
+    <form action="https://formspree.io/f/mjvndgyl" method="POST">
+     <div class="row">
+        <div class="col-md-1"></div>
+        <div class="col-md-10">
+          <h1 class="mb-5">Contact Me</h1>
+        <div class="mb-3">
+          <label for="Email-form" class="form-label">Email address</label>
+          <input
+            type="email"
+            class="form-control"
+            name="email"
+            placeholder="name@example.com"
+          />
+        </div>
+        <div class="mb-3">
+          <label for="text-area-form" class="form-label"
+            >Type your inquiry here!</label
+          >
+          <textarea
+            class="form-control"
+            id="exampleFormControlTextarea1"
+            rows="3"
+            name="inquiry"
+          ></textarea>
+        </div>
+        <button type="submit" class="btn btn-light mx-auto">Send</button>
+        </div>
+        </div>
+      <div class="col-md-1"></div>
       </div>
-      <div class="mb-3">
-        <label for="exampleFormControlTextarea1" class="form-label"
-          >Example textarea</label
-        >
-        <textarea
-          class="form-control"
-          id="exampleFormControlTextarea1"
-          rows="3"
-        ></textarea>
-      </div>
-    </div>
+    </form>
   </body>
   <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
   <script src="./scripts/contact.js"></script>
