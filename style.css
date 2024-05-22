@@ -28,17 +28,22 @@ a:hover {
 }
 
 .top-container h1 {
-  font-size: 200px !important;
+  font-size: 200px;
   text-align: left;
+}
+@media (max-width: 576px) {
+  /* Extra small devices (phones, less than 576px) */
+  .top-container h1 {
+    font-size: 30vw;
+  }
 }
 .top-container p {
   font-size: 20px;
   text-align: left;
-  padding-right: 400px;
 }
 
-.top-container {
-  padding-left: 100px;
+.homepage .top-container {
+  padding-left: 80px;
 }
 
 h2 {
