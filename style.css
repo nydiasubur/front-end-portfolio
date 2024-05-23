@@ -27,6 +27,15 @@ a:hover {
   text-shadow: 2px 2px 5px rgba(255, 255, 255, 0.5);
 }
 
+.fade-in-element {
+  opacity: 0; /* Initial state */
+  transition: opacity 2s; /* Duration of the fade-in effect */
+}
+
+.fade-in-element.fade-in-effect {
+  opacity: 1; /* Final state after the fade-in */
+}
+
 .top-container h1 {
   font-size: 200px;
   text-align: left;
@@ -47,7 +56,7 @@ a:hover {
 }
 
 h2 {
-  font-size: 48px !important;
+  font-size: 58px !important;
 }
 
 p {
@@ -61,6 +70,9 @@ p {
 .projects-content {
   margin-top: 15px;
   color: var(--primary-color);
+}
+.projects-content h3 {
+  font-size: 50px;
 }
 
 .projects-content p {
