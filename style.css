@@ -21,6 +21,7 @@ nav .navbar {
 
 a {
   transition: all 120ms ease-in-out;
+  text-decoration: underline;
 }
 
 a:hover {
@@ -40,12 +41,7 @@ a:hover {
   font-size: 200px;
   text-align: left;
 }
-@media (max-width: 576px) {
-  /* Extra small devices (phones, less than 576px) */
-  .top-container h1 {
-    font-size: 30vw;
-  }
-}
+
 .top-container p {
   font-size: 20px;
   text-align: left;
@@ -155,7 +151,7 @@ p {
   filter: grayscale(0%);
 }
 
-.projects-content .tool {
+.tool {
   padding: 12px;
   margin: 10px;
   margin-left: 0px;
@@ -186,6 +182,7 @@ footer .social-links a {
   color: var(--primary-color);
   font-size: 20px;
   padding: 20px;
+  padding-bottom: 10px;
   transition: all 150ms ease-in-out;
 }
 
@@ -204,4 +201,23 @@ footer .trademark {
   font-family: "Courier New", Courier, monospace;
   font-weight: 300;
   text-align: center;
+}
+
+.footer-email {
+  margin-bottom: 15px;
+}
+@media (max-width: 576px) {
+  /* Extra small devices (phones, less than 576px) */
+  .homepage .top-container {
+    padding-left: 30px;
+  }
+  .top-container h1 {
+    font-size: 30vw;
+  }
+  footer {
+    margin-left: 20px;
+  }
+  .contact .content {
+    padding: 15px;
+  }
 }
