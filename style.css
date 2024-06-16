@@ -206,6 +206,38 @@ footer .trademark {
 .footer-email {
   margin-bottom: 15px;
 }
+
+.animate-in-y-position {
+  animation: CSSScrollReveal-Y 1s ease-in-out both;
+}
+.hidden {
+  opacity: 0;
+}
+
+@keyframes CSSScrollReveal-Y {
+  from {
+    opacity: 0;
+    transform: translateY(100px);
+    filter: blur(5px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+    filter: blur(0px);
+  }
+}
+
+@keyframes CSSScrollReveal-X {
+  from {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
 @media (max-width: 576px) {
   /* Extra small devices (phones, less than 576px) */
   .homepage .top-container {
