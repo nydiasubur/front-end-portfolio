@@ -1,19 +1,26 @@
 :root {
-  --primary-color: whitesmoke;
-  --secondary-color: #f5f2fe;
+  --primary-color: #232121;
+  --secondary-color: #9f9f9f;
   --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
 }
 
 body {
+  /*
   background-image: url("./images/background.png");
-  background-size: cover; /* Cover the entire area */
-  color: var(--primary-color);
+  background-size: cover; /* Cover the entire area */*/
+  
   font-family: Arial, Helvetica, sans-serif !important;
+}
+
+.number{
+  font-size:0.7em;
+  color: var(--secondary-color);
 }
 
 body .homepage {
   color: var(--primary-color);
 }
+
 
 nav .navbar {
   background-color: transparent !important; /* Override Bootstrap's background-color */
@@ -36,10 +43,28 @@ a:hover {
 .fade-in-element.fade-in-effect {
   opacity: 1; /* Final state after the fade-in */
 }
+.top-container{
+  margin:auto;
+  width:100%;
+}
+.header-container{
+  position: relative;/* Establish a positioning context for absolute children */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width:100%;
+}
+
+.homepage .role-title{
+
+}
 
 .top-container h1 {
-  font-size: 200px;
-  text-align: left;
+  width: 100%; /* Full width */
+  font-size: 15vw; /* Responsive font size */
+  text-align: left; /* Align text to the left */
+  margin: 0; /* Remove default margins if needed */
+  position: relative; /* Position relative for stacking context */
 }
 
 .top-container p {
@@ -155,8 +180,17 @@ p {
   padding: 12px;
   margin: 10px;
   margin-left: 0px;
-  background-color: rgba(70, 70, 70, 0.6);
-  border-radius: 10px;
+  background-color:none;
+  border: 1px solid var(--primary-color);
+  border-radius: 20px;
+}
+
+.workflow-heading{
+  font-size: 1.5em;
+  font-weight:500;
+}
+.description{
+  font-size: 1.1em;
 }
 
 .contact {

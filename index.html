@@ -15,15 +15,9 @@
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://kit.fontawesome.com/d5df6e20e1.js"
-      crossorigin="anonymous"
-    ></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    
   </head>
 
   <body class="homepage">
@@ -67,12 +61,15 @@
       </div>
     </nav>
     <!--End of Navbar-->
-
+    <section class="hero">
     <div class="homepage cointainer-lg p-5">
       <div class="row">
-        <div class="top-container">
-          <div class="col-md-12 ">
-            <h1 class="fade-in-element" >hello;</h1>
+        <div class="top-container p-0">
+         
+          <div class="col-12 header-container">
+            <div class="tool role-title">JUNIOR</div>
+            <div> <h1 class="fade-in-element" > Front-End Developer</h1> </div>
+            
           </div>
 
           <div class="row">
@@ -92,89 +89,204 @@
       </div>
     </div>
     <hr />
+    </section>
+    
+    <section class="certification">
+
     <div class="projects-highlight container">
-      <h3 class="pt-3 hidden">Highlighted Projects</h3>
-      <p class="pt-0 hidden">
-        Selected projects from my advanced front-end coding course with SheCodes
-      </p>
-      <div class="row mb-5 lg-12  certificates">
-        <div class="col-12 col-md-4 grayscale-filter certificate hiddenElements-x-axis">
-          <a
-              href="./projects.html#weather-project"
-              alt="nydia's she code profile"
-              target="_blank"
-            >
-          <img
-            src="/images/weather-app.png"
-            class="img-fluid p-2 shadow rounded"
-            alt="weather application screenshot"
-          />
-          </a>
-          <h3  class="text-center">Weather App</h3>
-           <div class="tools-used d-flex flex-wrap justify-content-center">
-                <span class="tool">HTML</span>
-                <span class="tool">CSS</span>
-                <span class="tool">JavaScript</span>
-                <span class="tool">React</span>
-                <span class="tool">Bootstrap</span>
-                
-                <span class="tool">APIs</span>
-                <span class="tool">Github</span>
-                <span class="tool">Netlify</span>
-                
-              </div>
+      
+      <div class="row mb-5 lg-12 certificates">
+        <div class="col-md-4">
+          <h3 class="pt-3 hidden">Highlighted Projects</h3>
+          <p class="pt-0 hidden">
+            Selected projects from my advanced front-end coding course with SheCodes
+          </p>
         </div>
-        <div class="col-12 col-md-4 grayscale-filter certificate hiddenElements-x-axis">
-           <a
-              href="./projects.html#dictionary-app"
-              alt="nydia's she code profile"
-              target="_blank"
-            >
-          <img
-            src="images/dictionary-project.png"
-            class="img-fluid p-2 shadow rounded"
-            alt="dictionary application screenshot"
-            height="281"
-          />
-          </a>
-          <h3 class="text-center pt-3">Dictionary App</h3>
+        <div class="swiper col-md-9">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide grayscale-filter certificate ">
+            <a
+                href="./projects.html#weather-project"
+                alt="nydia's she code profile"
+                target="_blank"
+              >
+            <img
+              src="/images/weather-app.png"
+              class="img-fluid p-2 shadow rounded"
+              alt="weather application screenshot"
+            />
+            </a>
+            <h3  class="text-center">Weather App</h3>
+            <div class="tools-used d-flex flex-wrap justify-content-center">
+                  <span class="tool">HTML</span>
+                  <span class="tool">CSS</span>
+                  <span class="tool">JavaScript</span>
+                  <span class="tool">React</span>
+                  <span class="tool">Bootstrap</span>
+                  
+                  <span class="tool">APIs</span>
+                  <span class="tool">Github</span>
+                  <span class="tool">Netlify</span>
+                  
+                </div>
+          </div>
+          <div class="swiper-slide grayscale-filter certificate ">
+            <a
+                href="./projects.html#dictionary-app"
+                alt="nydia's she code profile"
+                target="_blank"
+              >
+            <img
+              src="images/dictionary-project.png"
+              class="img-fluid p-2 shadow rounded"
+              alt="dictionary application screenshot"
+              height="281"
+            />
+            </a>
+            <h3 class="text-center pt-3">Dictionary App</h3>
+            <div class="tools-used d-flex flex-wrap justify-content-center">
+                  <span class="tool">HTML</span>
+                  <span class="tool">CSS</span>
+                  <span class="tool">JavaScript</span>
+                  <span class="tool">React</span>
+                  <span class="tool">Bootstrap</span>
+                  <span class="tool">APIs</span>
+                  <span class="tool">Responsive web dev</span>
+                  <span class="tool">Github</span>
+                  <span class="tool">Netlify</span>
+                </div>
+          </div>
+          <div class="swiper-slide grayscale-filter certificate">
+            <a
+                href="./projects.html#world-clock-app"
+                alt="nydia's she code profile"
+                target="_blank"
+              >
+            <img
+              src="images/world-clock-app.png"
+              class="img-fluid p-2 shadow rounded"
+              alt="world clock application screenshot"
+              height="281"
+            />
+            </a>
+            <h3 class="text-center pt-1">World Clock App</h3>
           <div class="tools-used d-flex flex-wrap justify-content-center">
-                <span class="tool">HTML</span>
-                <span class="tool">CSS</span>
-                <span class="tool">JavaScript</span>
-                <span class="tool">React</span>
-                <span class="tool">Bootstrap</span>
-                <span class="tool">APIs</span>
-                <span class="tool">Responsive web dev</span>
-                <span class="tool">Github</span>
-                <span class="tool">Netlify</span>
-              </div>
+                  <span class="tool">HTML</span>
+                  <span class="tool">CSS</span>
+                  <span class="tool">JavaScript</span>
+                  <span class="tool">Bootstrap</span>
+                  <span class="tool">APIs</span>
+                  <span class="tool">Github</span>
+                  <span class="tool">Netlify</span>
+                </div>
         </div>
-        <div class="col-12 col-md-4 grayscale-filter certificate hiddenElements-x-axis">
-          <a
-              href="./projects.html#world-clock-app"
-              alt="nydia's she code profile"
-              target="_blank"
-            >
-          <img
-            src="images/world-clock-app.png"
-            class="img-fluid p-2 shadow rounded"
-            alt="world clock application screenshot"
-            height="281"
-          />
-          </a>
-          <h3 class="text-center pt-1">World Clock App</h3>
-        <div class="tools-used d-flex flex-wrap justify-content-center">
-                <span class="tool">HTML</span>
-                <span class="tool">CSS</span>
-                <span class="tool">JavaScript</span>
-                <span class="tool">Bootstrap</span>
-                <span class="tool">APIs</span>
-                <span class="tool">Github</span>
-                <span class="tool">Netlify</span>
-              </div>
+        </div>
+        </div>
+        <div class="swiper-pagination"></div>
+
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+
+        <!-- If we need scrollbar -->
+        <div class="swiper-scrollbar"></div>
       </div>
+  </section>
+  <section class="my-workflow">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3">
+            <h4>My Workflow</h4>
+            <h4 class="side-heading"><i class="bi bi-arrow-return-right"></i></h4>
+          </div>
+          <div class="col-md-9">
+            <table class=" table no-bg-table">
+               
+                <tbody >
+                    <tr>
+                    <th scope="row" class="workflow-heading"> 
+                      <span class="number">01.</span> Requirement Analysis
+                    </th>
+                    <th class="show-more-button">
+                        <a href="#" class="show-more-button" onclick ="showMoreText(this); return false;">
+                        <i class="bi bi-plus-lg main-branding-color"></i>
+                    </a>
+                    </th>
+                    </tr>
+                    <tr class="more-text">
+                        <td class="description">  Understand project goals by collaborating with stakeholders to gather all necessary details.</td>
+                    </tr>
+                    <tr>
+                    <th scope="row" class="workflow-heading"> 
+                      <span class="number">02.</span> 
+                      Timelines and Deadlines</th>
+                     <th class="show-more-button">
+                         <a href="#" class="show-more-button" onclick ="showMoreText(this); return false;">
+                            <i class="bi bi-plus-lg main-branding-color"></i>
+                        </a>
+                    </th>
+                    <tr class="more-text">
+                        <td class="description"> Define realistic timelines, deadlines, and any project restrictions</td>
+                    </tr>
+                    <tr>
+                    <th scope="row" class="workflow-heading"> 
+                      <span class="number">03. </span> 
+                      Design and Prototyping 
+                    </th>
+                     <th class="show-more-button">
+                        <a href="#" class="show-more-button" onclick ="showMoreText(this); return false;">
+                            <i class="bi bi-plus-lg main-branding-color"></i>
+                        </a>
+                    </th>
+                    </tr>
+                    <tr class="more-text">
+                        <td class="description"> Create wireframes and prototypes using tools like Figma or Sketch, focusing on user-centric design through an iterative process.</td>
+                    </tr>
+                    <tr>
+                    <th scope="row" class="workflow-heading"> 
+                      <span class="number">04. </span> 
+                      Development</th>
+                     <th class="show-more-button">
+                        <a href="#" class="show-more-button" onclick ="showMoreText(this); return false;">
+                        <i class="bi bi-plus-lg main-branding-color"></i>
+                        </a>
+                    </th>
+                    </tr>
+                    <tr class="more-text">
+                        <td class="description">  Implement designs using HTML, CSS, JavaScript, and frameworks like React.js, ensuring clean and efficient code.</td>
+                    </tr>
+                     <th scope="row" class="workflow-heading"> 
+                      <span class="number">05. </span> 
+                      Testing</th>
+                     <th class="show-more-button">
+                        <a href="#" class="show-more-button" onclick ="showMoreText(this); return false;">
+                        <i class="bi bi-plus-lg main-branding-color"></i>
+                        </a>
+                    </th>
+                    </tr>
+                    <tr class="more-text">
+                        <td class="description">Conduct rigorous testing to ensure the code is robust and performs well across devices and browsers.</td>
+                    </tr>
+                    <th scope="row" class="workflow-heading"> 
+                      <span class="number">06. </span>
+                      Maintenance and Scaling </th>
+                     <th class="show-more-button">
+                        <a href="#" class="show-more-button" onclick ="showMoreText(this); return false;">
+                        <i class="bi bi-plus-lg main-branding-color"></i>
+                        </a>
+                    </th>
+                    </tr>
+                    <tr class="more-text">
+                        <td class="description">Provide ongoing support to optimize performance, fix bugs, and scale the project for future growth.</td>
+                    </tr>
+                    
+                </tbody>
+                </table>               
         </div>
+        
+      </div>
+  
+  </section>
         
 <!--footer-->
       <div class="footer-cta hidden">
@@ -218,6 +330,16 @@
       
     </footer>
   </body>
+  <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/d5df6e20e1.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script src="./scripts/fade-in-effects.js"></script>
   <script src="./scripts/scroll-animation.js"></script>
 </html>
