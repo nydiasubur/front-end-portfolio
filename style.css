@@ -88,6 +88,14 @@ p {
   text-align: center;
 }
 
+.skill-item{
+  font-size: 40px;
+}
+
+.skill-name{
+  font-size: 30px;
+}
+
 .projects-content {
   margin-top: 15px;
   color: var(--primary-color);
@@ -175,6 +183,33 @@ p {
   transform: translateY(-10px); /* Move the image up by 10px when hovered */
   filter: grayscale(0%);
 }
+
+ .swiper-slide {
+      background-position: center;
+      background-size: cover;
+    }
+
+    .swiper-slide img {
+      display: block;
+      width: 100%;
+    }
+
+     
+
+    .swiper-certificate {
+      margin: 100px auto;
+      width: 320px;
+      height: 240px;
+    }
+
+    .swiper-slide-certificate {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 22px;
+      font-weight: bold;
+      color: #fff;
+    }
 
 .tool {
   padding: 12px;

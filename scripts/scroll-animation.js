@@ -41,8 +41,6 @@ hiddenElementsInXAxis.forEach((hiddenElement2) =>
 document.addEventListener("DOMContentLoaded", function () {
   var swiper = new Swiper(".swiper", {
     effect: "cube",
-    grabCursor: true,
-    centeredSlides: true,
     slidesPerView: "auto",
     cubeEffect: {
       shadow: true,
@@ -66,4 +64,18 @@ document.addEventListener("DOMContentLoaded", function () {
     // Optional: Adjust the speed of swiping
     speed: 800,
   });
+});
+
+var swiper3 = new Swiper(".mySwiper3", {
+  grabCursor: true,
+  effect: "creative",
+  creativeEffect: {
+    prev: {
+      shadow: true,
+      translate: ["-20%", 0, -1],
+    },
+    next: {
+      translate: ["100%", 0, 0],
+    },
+  },
 });
