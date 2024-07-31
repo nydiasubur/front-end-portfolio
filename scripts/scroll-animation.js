@@ -81,3 +81,29 @@ document.addEventListener("DOMContentLoaded", function () {
     speed: 800, // Optional: Adjust speed of swiping
   });
 });
+
+function showMoreText(button) {
+  // Find the next sibling element with the class 'more-text'
+  let description = button.closest("tr").nextElementSibling;
+
+  if (description.classList.contains("show")) {
+    // Collapse the content
+    description.style.opacity = "0";
+    setTimeout(() => {
+      description.style.display = "none";
+    }, 300); // Matches the CSS transition duration
+    description.classList.remove("show");
+    button.innerHTML = '<i class="bi bi-plus-lg main-branding-color"></i>';
+  } else {
+    // Expand the content
+    description.style.display = "table-row"; // Use 'table-row' for table rows
+    requestAnimationFrame(() => {
+      requestAnimationFrame(() => {
+        description.style.opacity = "1"; // Transition opacity smoothly
+      });
+    });
+
+    description.classList.add("show");
+    button.innerHTML = '<i class="bi bi-arrow-up main-branding-color"></i>';
+  }
+}

@@ -11,7 +11,7 @@ body {
   
   font-family: Arial, Helvetica, sans-serif !important;
 }
-.seondary-color{
+.secondary-color{
   color: var(--secondary-color);
 }
 
@@ -29,13 +29,19 @@ nav .navbar {
   background-color: transparent !important; /* Override Bootstrap's background-color */
 }
 
-a {
+a, .link-color, i {
   transition: all 120ms ease-in-out;
-  text-decoration: underline;
+   color: var(--primary-color);
+  transition: all 250ms ease;
+  text-decoration: none;
+  font-size:18px;
+
 }
 
-a:hover {
+a:hover, .link-color:hover {
   text-shadow: 2px 2px 5px rgba(255, 255, 255, 0.5);
+  color:var(--secondary-color);
+  text-decoration: underline;
 }
 
 .fade-in-element {
@@ -71,7 +77,7 @@ a:hover {
 }
 
 .top-container p {
-  font-size: 20px;
+  font-size: 23px;
   text-align: left;
 }
 
@@ -105,12 +111,15 @@ p {
   color: var(--primary-color);
   font-size: 20px;
   transition: all 250ms ease;
+  text-decoration: none;
   
 }
-a:hover{
-  color:var(--secondary-color);
-}
 
+.project-heading h1{
+  font-size: 104px;
+    font-weight: 500;
+    line-height: 100%;
+}
 .projects-content {
   margin-top: 15px;
   color: var(--primary-color);
@@ -230,7 +239,18 @@ a:hover{
   font-weight:500;
 }
 .description{
-  font-size: 1.1em;
+  font-size: 1.3em;
+  letter-spacing: 0.01em;
+
+}
+.more-text {
+  display: none;
+  opacity: 0;
+  transition: opacity 1.2s ease;
+}
+
+.more-text.show {
+  opacity: 1;
 }
 
 .contact {
@@ -275,6 +295,21 @@ footer .trademark {
   font-family: "Courier New", Courier, monospace;
   font-weight: 300;
   text-align: center;
+}
+
+a.footer-link-color {
+  transition: all 120ms ease-in-out;
+   color: var(--secondary-color);
+  transition: all 250ms ease;
+  text-decoration: none;
+ 
+
+}
+
+a.footer-link-color:hover {
+  text-shadow: 2px 2px 5px rgba(255, 255, 255, 0.5);
+  color:var(--[rimary]-color);
+  text-decoration: underline;
 }
 
 .footer-email {
