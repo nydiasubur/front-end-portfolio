@@ -66,16 +66,18 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
-var swiper3 = new Swiper(".mySwiper3", {
-  grabCursor: true,
-  effect: "creative",
-  creativeEffect: {
-    prev: {
-      shadow: true,
-      translate: ["-20%", 0, -1],
+document.addEventListener("DOMContentLoaded", function () {
+  var swiper3 = new Swiper(".mySwiper3", {
+    grabCursor: true,
+    effect: "cards", // Use 'slide' effect for testing
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
     },
-    next: {
-      translate: ["100%", 0, 0],
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
     },
-  },
+    speed: 800, // Optional: Adjust speed of swiping
+  });
 });
