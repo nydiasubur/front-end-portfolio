@@ -32,7 +32,7 @@ nav .navbar {
 
 a, .link-color, i {
   transition: all 120ms ease-in-out;
-   color: var(--primary-color);
+  color: var(--primary-color);
   transition: all 250ms ease;
   text-decoration: none;
   font-size:18px;
@@ -46,13 +46,22 @@ a:hover, .link-color:hover {
 }
 
 .fade-in-element {
-  opacity: 0; /* Initial state */
-  transition: opacity 2s; /* Duration of the fade-in effect */
+  animation: fade-in-effect 2s ease-in-out both;
+  
 }
 
-.fade-in-element.fade-in-effect {
-  opacity: 1; /* Final state after the fade-in */
+.fade-in-element {
+  opacity: 0;
+  filter: blur(10px);
+  transition: opacity 1s ease-in-out, filter 1s ease-in-out;
 }
+
+.fade-in-element.visible {
+  opacity: 1;
+  filter: blur(0px);
+}
+
+
 .top-container{
   margin:auto;
   width:100%;
@@ -118,7 +127,7 @@ p {
   
 }
 
-.project-heading h1, h1{
+h1, .project-heading h1, .contact h1{
   font-size: 104px;
     font-weight: 500;
     line-height: 100%;
@@ -314,7 +323,7 @@ footer .trademark {
   text-align: center;
 }
 
-a.footer-link-color, .projects-highlight a, .footer-cta a {
+a.footer-link-color, .projects-highlight a, .footer-cta a,.about-page a {
   transition: all 120ms ease-in-out;
    color: var(--secondary-color);
   transition: all 250ms ease;
@@ -323,7 +332,7 @@ a.footer-link-color, .projects-highlight a, .footer-cta a {
 
 }
 
-a.footer-link-color:hover, .projects-highlight a:hover, .footer-cta a:hover {
+a.footer-link-color:hover, .projects-highlight a:hover, .footer-cta a:hover, .about-page a:hover {
   text-shadow: 2px 2px 5px rgba(255, 255, 255, 0.5);
   color:var(--primary-color);
   text-decoration: underline;

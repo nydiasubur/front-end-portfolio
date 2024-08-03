@@ -20,7 +20,6 @@ hiddenElements.forEach((hiddenElement) => observer.observe(hiddenElement));
 const observer2 = new IntersectionObserver(
   (entries) => {
     entries.forEach((entry) => {
-      console.log(entry);
       if (entry.isIntersecting) {
         entry.target.classList.add("animate-in-x-position");
       } else {
@@ -38,6 +37,7 @@ hiddenElementsInXAxis.forEach((hiddenElement2) =>
   observer2.observe(hiddenElement2)
 );
 
+//for the swiper slider effect
 document.addEventListener("DOMContentLoaded", function () {
   var swiper = new Swiper(".swiper", {
     effect: "cube",

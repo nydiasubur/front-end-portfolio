@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", function () {
+/**document.addEventListener("DOMContentLoaded", function () {
   // Function to check if an element is in the viewport
   function isInViewport(element) {
     var bounding = element.getBoundingClientRect();
@@ -27,4 +27,22 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // Event listener for scroll event
   window.addEventListener("scroll", handleScroll);
-});
+});**/
+
+//animation code for down up y axis animation
+const observerF = new IntersectionObserver(
+  (entries) => {
+    entries.forEach((entry) => {
+      console.log(entry);
+      if (entry.isIntersecting) {
+        entry.target.classList.add("visible");
+      } else {
+        entry.target.classList.remove("visible"); // Delay to match the animation duration
+      }
+    });
+  },
+  { threshold: 0.1 }
+);
+
+const fadeInElements = document.querySelectorAll(".fade-in-element");
+fadeInElements.forEach((fadeInElement) => observerF.observe(fadeInElement));
