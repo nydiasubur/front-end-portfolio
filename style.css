@@ -74,10 +74,6 @@ a:hover, .link-color:hover {
   width:100%;
 }
 
-.homepage .role-title{
-
-}
-
 .top-container h1 {
   width: 100%; /* Full width */
   font-size: 15vw; /* Responsive font size */
@@ -395,11 +391,16 @@ a.footer-link-color:hover, .projects-highlight a:hover, .footer-cta a:hover, .ab
 
 @media (max-width: 576px) {
   /* Extra small devices (phones, less than 576px) */
-  .homepage .top-container {
+
+
+    .homepage .top-container {
     padding-left: 30px;
   }
   .top-container h1 {
     font-size: 30vw;
+  }
+  .header-container h1{
+    font-size:95px;
   }
   footer {
     margin-left: 20px;
@@ -407,4 +408,17 @@ a.footer-link-color:hover, .projects-highlight a:hover, .footer-cta a:hover, .ab
   .contact .content {
     padding: 15px;
   }
+
+  .description, .project-links, h2{
+    text-align: center;
+  }
+
+  /*project page*/
+  .tools-used{
+    justify-content: space-evenly;
+  }
+  h1, .project-heading h1, .contact h1, {
+  font-size: 80px;
+  }
 }
+
