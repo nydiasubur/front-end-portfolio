@@ -107,3 +107,18 @@ function showMoreText(button) {
     button.innerHTML = '<i class="bi bi-arrow-up main-branding-color"></i>';
   }
 }
+
+//hover elements message
+
+document.addEventListener("DOMContentLoaded", () => {
+  const hoverElement = document.getElementById("hover-element");
+  const message = document.getElementById("hoverMessage");
+
+  hoverElement.addEventListener("mouseover", () => {
+    message.style.display = "block";
+  });
+
+  hoverElement.addEventListener("mouseout", () => {
+    message.style.display = "none";
+  });
+});

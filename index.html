@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta
@@ -23,7 +24,7 @@
 
   <body class="homepage">
     <!-- Navbar-->
-    <nav class="navbar navbar-expand-lg bg-body-tertiary fw-bold">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary fw-bold fixed-top">
       <div class="container-fluid">
         <a class="navbar-brand" href="#"> NYDIA SUBUR </a>
         <button
@@ -172,7 +173,7 @@ Let’s transform your vision into a stunning web experience.
                 <i class="fab fa-figma"></i>
                 <span class="skill-name">Figma</span>
               </div>
-              <div class=" mt-5 resume">
+              <div class=" mt-5 resume mx-auto">
                 <a class="tool" href="https://drive.google.com/file/d/1Ho4SUehdK4dACfgvzEduOPplYrS-ZRej/view?usp=sharing" aria-label="resume link" target="_blank">
                   Get my Resume  <i class="bi bi-download"></i>
                 </a> 
@@ -212,7 +213,7 @@ Let’s transform your vision into a stunning web experience.
         <div class="col-md-8 fade-in-element">
           
         
-        <div class="swiper">
+        <div class="swiper" id="hover-element">
         <div class="swiper-wrapper ">
           <div class="swiper-slide grayscale-filter certificate ">
             <h3  class="text-center">Weather App</h3>
@@ -295,12 +296,16 @@ Let’s transform your vision into a stunning web experience.
         </div>
       
         </div>
-        
-
         <!-- If we need navigation buttons -->
         <div class="swiper-button-prev"></div>
         <div class="swiper-button-next"></div>
-
+        <!-- swipe right message popup when hovered-->
+        <div class="text-center fst-italic seondary-color" > 
+          <span id="hoverMessage">
+            swipe me to view 
+            <i class="bi bi-hand-index"></i> 
+          </span>
+        </div>
        <div class="col-md-2"></div>
       </div>
   </section>
