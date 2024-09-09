@@ -15,6 +15,9 @@ body {
 .secondary-color{
   color: var(--secondary-color);
 }
+.third-color{
+  color: var(--third-color);
+}
 
 .number{
   font-size:0.7em;
