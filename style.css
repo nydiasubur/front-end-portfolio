@@ -273,11 +273,18 @@ margin:auto;
 
 .tool {
   padding: 12px;
-  margin: 10px;
+  margin-top: 20px;
   margin-left: 0px;
   background-color:none;
   border: 1px solid var(--primary-color);
   border-radius: 20px;
+}
+.tool.role-title{
+  
+  position: absolute;
+  top:-30px;
+  left:10px;
+
 }
 
 .workflow-heading{
@@ -416,9 +423,15 @@ a.footer-link-color:hover, .projects-highlight a:hover, .footer-cta a:hover, .ab
   }
 }
 
-@media (max-width: 576px) {
+@media (max-width: 768px) {
   /* Extra small devices (phones, less than 576px) */
 
+  h1 {
+  font-size: 2.5rem; /* Adjust as needed */
+}
+.tool.role-title{
+  top:-40px;
+}
 
   .homepage .top-container {
     padding-left: 30px;
@@ -427,7 +440,11 @@ a.footer-link-color:hover, .projects-highlight a:hover, .footer-cta a:hover, .ab
     font-size: 30vw;
   }
   .header-container h1{
-    font-size:95px;
+    margin-top:15px;
+    font-size:75px;
+  word-wrap: normal;
+  white-space: normal;
+
   }
 td.description{
     text-align:left;
@@ -454,8 +471,11 @@ td.description{
   
 
   /*project page*/
-  .tools-used{
+.tools-used{
+  display: flex;
+  flex-wrap: wrap;
     justify-content: space-evenly;
+    gap:10px;
   }
   h1,.project-heading h1, .contact h1 {
   display:flex;
